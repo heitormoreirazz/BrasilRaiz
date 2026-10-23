@@ -71,7 +71,7 @@ button {
 }
 
 :focus-visible {
-  outline: 4px solid var(--blue);
+  outline: 3px solid var(--blue);
   outline-offset: 3px;
 }
 
