@@ -1,0 +1,124 @@
+/* ===== PÁGINA SOBRE (cole no final do style.css) ===== */
+
+.about-back {
+    color: var(--green-dark);
+    margin: 0;
+}
+
+.about-hero {
+    padding: 110px 11.5% 70px;
+    max-width: 1100px;
+}
+
+.about-eyebrow {
+    color: var(--orange);
+}
+
+.about-hero h1 em {
+    color: var(--green);
+}
+
+.about-statement {
+    border-top: 1px solid var(--line);
+    margin: 0 11.5%;
+    padding: 60px 0;
+}
+
+.about-statement .large-copy {
+    margin: 0;
+    max-width: 640px;
+}
+
+.about-values {
+    margin: 0 11.5%;
+}
+
+.about-values ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-values li {
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1.4fr;
+    padding: 24px 0;
+    transition: padding-left .25s;
+}
+
+.about-values li:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.about-values li:hover {
+    padding-left: 12px;
+}
+
+.about-values strong {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.about-values span {
+    align-self: center;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.about-close {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 11.5%;
+}
+
+.about-close p {
+    color: var(--muted);
+    font-family: var(--serif);
+    font-style: italic;
+    margin: 0;
+}
+
+.about-footer {
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+    gap: 24px;
+    padding: 24px 11.5%;
+}
+
+.about-footer a:hover {
+    color: var(--green);
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 70px 8% 50px;
+    }
+
+    .about-statement,
+    .about-values {
+        margin: 0 8%;
+    }
+
+    .about-values li {
+        gap: 6px;
+        grid-template-columns: 1fr;
+    }
+
+    .about-close {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+        padding: 70px 8%;
+    }
+
+    .about-footer {
+        padding: 24px 8%;
+    }
+}
